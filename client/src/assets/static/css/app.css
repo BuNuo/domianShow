@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*全局*/
+html{font-size:14px}
+@media only screen and (min-width:320px) and (max-width: 565px){html{font-size:16px!important}}
+@media only screen and (min-width:566px) and (max-width: 768px){html{font-size:18px!important}}
+@media only screen and (min-width:769px){.smallscreen{display:none}}
+@media only screen and (min-width:320px) and (max-width: 768px){.bigscreen{display: none;}}
+body,div,section,article,header,nav,footer,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,span,img,form,fieldset,legend,input,button,textarea,blockquote,th,td,menu,figure,dir,sup{
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        outline:0;
+                    }
+body{
+    font-family:"微软雅黑","Helvetica Neue",'Tohoma';
+    font-size: 100%;
+    color:#333;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+button,a,input{
+    outline: none !important; 
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;/*兼容IE6*/
+}
+ul,li{
+    list-style-type: none;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+*{
+    box-sizing: border-box;
+}
+.FL-L{
+    float:left;
+}
+.FL-R{
+    float:right;
+}
+.PS-R{
+    position:relative;
+}
+.VIS-H{
+    visibility: hidden;
+}
+
+.domain{
+    font-family: 'Arial'
+}
+.MGT25{
+    margin-top:25px !important;
+}
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.btn-primary {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+.btn-primary.btn-filled {
+    background: #1aaf5d;
+    color: #fff;
+}
+.btn-xs {
+    padding: 8px 24px;
+    font-size: 12px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn {
+    min-width: 50px;
+    background: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn-primary {
+    display: inline-block;
+    padding: 14px 28px 13px 28px;
+    border: 2px solid #1aaf5d;
+    border-radius: 25px;
+    color: #1aaf5d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1;
+}
